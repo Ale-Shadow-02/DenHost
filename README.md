@@ -1,1 +1,1 @@
-# DenHost
+# PrimeHost
