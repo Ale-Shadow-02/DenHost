@@ -1,9 +1,15 @@
 @import "fonts";
+@import "reset";
 
 body {
 	font-family: CormorantUpright;
+	font-size: 20px;
+}
+
+.anim {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	font-size: 50px;
-	span {
-		color: red;
-	}
+	padding: 700px 0px 0px 0px;
 }
