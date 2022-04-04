@@ -1,15 +1,9 @@
 @import "fonts";
 @import "reset";
+@import "variables";
+@import "button";
 
 body {
-	font-family: CormorantUpright;
-	font-size: 20px;
-}
-
-.anim {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 50px;
-	padding: 700px 0px 0px 0px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 1rem;
 }

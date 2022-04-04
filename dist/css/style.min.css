@@ -84,7 +84,6 @@ body {
   width: 100%;
   font-size: 100%;
   line-height: 1;
-  font-size: 14px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -137,15 +136,27 @@ h6 {
 }
 
 /** Конец Обнуление стилей*/
-body {
-  font-family: CormorantUpright;
-  font-size: 20px;
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #01f0ff;
+  border: 3px solid #01f0ff;
+  border-radius: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  font-size: 1rem;
+  color: #141820;
+  text-transform: uppercase;
+  transition: all ease 0.3s;
+}
+.btn:hover {
+  background-color: #f7f7f7;
+  color: #1f37ff;
+  border: 3px solid #01f0ff;
+  transition: all ease 0.3s;
 }
 
-.anim {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 50px;
-  padding: 700px 0px 0px 0px;
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
 }
