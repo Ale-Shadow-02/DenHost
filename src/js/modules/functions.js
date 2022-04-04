@@ -16,8 +16,8 @@ export function isWebp() {
 }
 // Меню бургер
 export function mobilMenu() {
-const iconMenu = document.querySelector('.menu__icon');
-const menuBody = document.querySelector('.menu__body');
+	const iconMenu = document.querySelector('.menu__icon');
+	const menuBody = document.querySelector('.menu__body');
 	if (iconMenu) {
 		iconMenu.addEventListener("click", function (e) {
 			document.body.classList.toggle('_lock');
@@ -26,12 +26,12 @@ const menuBody = document.querySelector('.menu__body');
 		});
 	}
 
-// Прокрутка при клике
-const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
+	// Прокрутка при клике
+	const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
 	if (menuLinks.length > 0) {
 		menuLinks.forEach(menuLink => {
-		menuLink.addEventListener("click", onMenuLinkClick);
-	});
+			menuLink.addEventListener("click", onMenuLinkClick);
+		});
 
 		function onMenuLinkClick(e) {
 			const menuLink = e.target;
@@ -54,4 +54,13 @@ const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
 		}
 	}
 }
+// Анимация в офере по кругу
+export function circle() {
+	const text = document.querySelector(".item-circle__text p");
+	text.innerHTML = text.innerText.split("").map((letter, i) =>
+	`<span style="transform:rotate(${i * 7.5}deg")>${letter}</span>`
+	)
+	.join("");
+}
+
 
