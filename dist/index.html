@@ -1,30 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
+<head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/49dca44c34.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/style.min.css">
 	<title>Главная</title>
 </head>
 
 <body>
-	<header>
-
+	<div class="wrapper">
+		<header class="header">
+    <div class="header__container">
+        <a href="/" class="header__logo">
+            <img src="img/Logo_PrimeHost.svg" alt="LOGO">
+        </a>
+        <div class="header__menu menu">
+            <div class="menu__icon">
+                <span></span>
+            </div>
+            <nav class="menu__body">
+                <ul class="menu__list">
+                    <li><a data-goto=".page__section_1" href="#" class="menu__link">О нас</a></li>
+                    <li><a data-goto=".page__section_2" href="#" class="menu__link">Преимущества</a></li>
+                    <li><a data-goto=".page__section_3" href="#" class="menu__link">Характеристики</a></li>
+                    <!-- <li><a data-goto=".page__section_3" href="#" class="menu__link">Команда</a></li> -->
+                    <li><a data-goto=".page__section_3" href="#" class="menu__link">Тарифы</a></li>
+                    <li><a data-goto=".page__section_3" href="#" class="menu__link">Этапы</a></li>
+                    <!-- <li><a data-goto=".page__section_3" href="#" class="menu__link">Отзывы</a></li> -->
+                    <li><a href="#" class="social"><i class="fa fa-vk"></i></a></li>
+                    <li><a href="#" class="btn">Регистрация</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 </header>
-	<main>
-		Lorem, ipsum dolor sit amet consectetur adipisicing elit. <i><b>Repudiandae repellendus quae eius</b></i>
-		recusandae
-		est accusamus ab. Sint laborum voluptates voluptatum quis, id quod hic nobis eaque facere consectetur odio
-		aliquid!
-		<a href="#" class="btn">Регистрация</a>
+		<main>
 
-	</main>
-	<footer></footer>
-	<script src="js/app.min.js">
-		Регистрация
-	</script>
 
+		</main>
+		<footer></footer>
+	</div>
+	<script src="js/app.min.js"></script>
 </body>
 
 </html>

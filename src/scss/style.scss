@@ -2,8 +2,22 @@
 @import "reset";
 @import "variables";
 @import "button";
+@import "header";
 
 body {
 	font-family: "Montserrat", sans-serif;
 	font-size: 1rem;
+	font-weight: 400;
+}
+body._lock {
+	overflow: hidden;
+}
+.wrapper {
+	max-width: 1920px;
+	min-height: 100%;
+}
+.container,
+.header__container {
+	max-width: 1220px;
+	padding: 0 10px;
 }
