@@ -372,9 +372,9 @@ main {
   }
 }
 .offer {
-  background: url("../img/offer_bg.jpg") 0 -160px/cover no-repeat;
+  background: url("../img/offer_bg_2.jpg") 0 -160px/cover no-repeat;
   height: 900px;
-  padding: 40px 0px 0px 0px;
+  padding: 70px 0px 0px 0px;
   position: relative;
 }
 @media (max-width: 600px) {
@@ -402,7 +402,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 55px;
+  padding: 50px;
 }
 @media (max-width: 992px) {
   .item-circle {
@@ -420,6 +420,11 @@ main {
   position: absolute;
   top: 0;
   left: 130px;
+}
+@media (max-width: 1770px) {
+  .item-circle__star {
+    display: none;
+  }
 }
 @media (max-width: 600px) {
   .item-circle__star {
@@ -440,9 +445,14 @@ main {
   z-index: 1;
   padding: 85px 0px 0px 0px;
 }
+@media (max-width: 1770px) {
+  .item-circle__content {
+    padding: 10px 0px 0px 0px;
+  }
+}
 @media (max-width: 600px) {
   .item-circle__content {
-    padding: 40px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
   }
 }
 .item-circle__text {
@@ -471,17 +481,23 @@ main {
   transform-origin: 0 285px;
 }
 .item-circle__subtitle {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 0.9rem;
   text-transform: uppercase;
   color: #f2f2f2;
   margin: 0px 0px 10px 0px;
+}
+@media (max-width: 1770px) {
+  .item-circle__subtitle {
+    margin: 0px 0px 25px 0px;
+  }
 }
 @media (max-width: 600px) {
   .item-circle__subtitle {
     font-size: 0.8rem;
     width: 185px;
     text-align: center;
+    margin: 0px 0px 10px 0px;
   }
 }
 .item-circle__title {
@@ -527,6 +543,16 @@ main {
   text-align: left;
 }
 
+.wave {
+  background: url(../img/wave.png) 0 0/cover no-repeat;
+  height: 350px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 11;
+}
+
 @keyframes animate {
   0% {
     transform: rotate(-360deg);
@@ -536,7 +562,7 @@ main {
   }
 }
 .about {
-  background-color: #000b23;
+  background: #000b23;
 }
 .about__body {
   display: flex;
@@ -549,7 +575,7 @@ main {
   display: flex;
 }
 .section__title-about {
-  width: 540px;
+  max-width: 540px;
   margin: 0 auto;
 }
 .section__title-left {
@@ -567,7 +593,7 @@ main {
 }
 
 .item-content__text {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1rem;
   color: #f2f2f2;
 }

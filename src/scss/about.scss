@@ -1,6 +1,6 @@
 .about {
-    background-color: #000b23;
-
+    //background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 11, 35, 1) 30%);
+    background: #000b23;
     &__body {
         display: flex;
         flex-wrap: wrap;
@@ -23,7 +23,7 @@
 .section {
     &__title {
         &-about {
-            width: 540px;
+            max-width: 540px;
             margin: 0 auto;
         }
     }
@@ -46,7 +46,7 @@
 }
 .item-content {
     &__text {
-        font-weight: 500;
+        font-weight: 400;
         font-size: 1rem;
         color: #f2f2f2;
     }

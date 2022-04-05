@@ -1,7 +1,7 @@
 .offer {
-    background: url("../img/offer_bg.jpg") 0 -160px / cover no-repeat;
+    background: url("../img/offer_bg_2.jpg") 0 -160px / cover no-repeat;
     height: 900px;
-    padding: 40px 0px 0px 0px;
+    padding: 70px 0px 0px 0px;
     position: relative;
     @media (max-width: 600px) {
         height: 700px;
@@ -24,7 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 55px;
+    padding: 50px;
     @media (max-width: 992px) {
         margin: 0px 0px 20px 0px;
     }
@@ -37,6 +37,9 @@
         position: absolute;
         top: 0;
         left: 130px;
+        @media (max-width: 1770px) {
+            display: none;
+        }
         @media (max-width: 600px) {
             width: 185px;
             top: -30px;
@@ -54,8 +57,11 @@
         align-items: center;
         z-index: 1;
         padding: 85px 0px 0px 0px;
+        @media (max-width: 1770px) {
+            padding: 10px 0px 0px 0px;
+        }
         @media (max-width: 600px) {
-            padding: 40px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
         }
     }
     &__text {
@@ -80,15 +86,19 @@
         }
     }
     &__subtitle {
-        font-weight: 700;
+        font-weight: 500;
         font-size: 0.9rem;
         text-transform: uppercase;
         color: #f2f2f2;
         margin: 0px 0px 10px 0px;
+        @media (max-width: 1770px) {
+            margin: 0px 0px 25px 0px;
+        }
         @media (max-width: 600px) {
             font-size: 0.8rem;
             width: 185px;
             text-align: center;
+            margin: 0px 0px 10px 0px;
         }
     }
     &__title {
@@ -128,6 +138,15 @@
         max-width: 340px;
         text-align: left;
     }
+}
+.wave {
+    background: url(../img/wave.png) 0 0 / cover no-repeat;
+    height: 350px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 11;
 }
 @keyframes animate {
     0% {
