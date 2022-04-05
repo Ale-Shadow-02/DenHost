@@ -1,0 +1,58 @@
+.about {
+    background-color: #000b23;
+
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__body-item {
+        flex: 0 1 50%;
+    }
+
+    &__item {
+    }
+
+    &__item-content {
+        display: flex;
+    }
+
+    &__item-image {
+    }
+}
+.section {
+    &__title {
+        &-about {
+            width: 540px;
+            margin: 0 auto;
+        }
+    }
+
+    &__title-left {
+        width: 100%;
+        text-align: left;
+        display: block;
+    }
+
+    &__title-right {
+        width: 100%;
+        text-align: right;
+        display: block;
+    }
+
+    &__title-white {
+        color: #f2f2f2;
+    }
+}
+.item-content {
+    &__text {
+        font-weight: 500;
+        font-size: 1rem;
+        color: #f2f2f2;
+    }
+
+    &__img {
+    }
+}
+.item-content-image {
+}

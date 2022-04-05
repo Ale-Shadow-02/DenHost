@@ -140,6 +140,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
+  background-color: #000b23;
 }
 
 body._lock {
@@ -160,6 +161,16 @@ body._lock {
 
 main {
   padding-top: 95px;
+  overflow: hidden;
+}
+
+.section__title {
+  font-style: italic;
+  font-weight: 900;
+  font-size: 2.25rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #01f0ff;
 }
 
 .btn {
@@ -361,7 +372,7 @@ main {
   }
 }
 .offer {
-  background: url("../img/Main image.jpg") 0 -160px/cover no-repeat;
+  background: url("../img/offer_bg.jpg") 0 -160px/cover no-repeat;
   height: 900px;
   padding: 40px 0px 0px 0px;
   position: relative;
@@ -523,4 +534,40 @@ main {
   100% {
     transform: rotate(0deg);
   }
+}
+.about {
+  background-color: #000b23;
+}
+.about__body {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about__body-item {
+  flex: 0 1 50%;
+}
+.about__item-content {
+  display: flex;
+}
+.section__title-about {
+  width: 540px;
+  margin: 0 auto;
+}
+.section__title-left {
+  width: 100%;
+  text-align: left;
+  display: block;
+}
+.section__title-right {
+  width: 100%;
+  text-align: right;
+  display: block;
+}
+.section__title-white {
+  color: #f2f2f2;
+}
+
+.item-content__text {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #f2f2f2;
 }
