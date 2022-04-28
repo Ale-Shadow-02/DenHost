@@ -6,26 +6,52 @@
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+        @media (max-width: 992px) {
+            flex-direction: column;
+        }
     }
 
     &__body-item {
         flex: 0 1 50%;
+        overflow: hidden;
     }
 
     &__item-content {
         display: flex;
+        margin: 0px 0px 50px 0px;
+        justify-content: space-between;
     }
 
-    &__item-img {
-        flex: 0 1 40%;
+    &__item {
+        &-img {
+            flex: 0 1 40%;
+            @media (max-width: 992px) {
+                order: -1;
+                margin: 0px 0px 50px 0px;
+            }
+        }
+        &-image {
+            max-width: 100%;
+        }
     }
 }
 .section {
     &__title {
         &-about {
             max-width: 540px;
-            margin: 0 auto 30px auto;
-            background: #fff;
+            margin: 0 auto 50px auto;
+            position: relative;
+            z-index: 1;
+            &::after {
+                position: absolute;
+                z-index: -1;
+                content: "";
+                top: -170px;
+                left: -125px;
+                width: 145%;
+                height: 410%;
+                background: url("../img/ellipse_title.png") 0 0 / cover no-repeat;
+            }
         }
     }
 
@@ -50,9 +76,24 @@
         font-weight: 400;
         font-size: 1rem;
         color: #f2f2f2;
+        max-width: 345px;
+        @media (max-width: 576px) {
+            max-width: 100%;
+        }
+    }
+    &__left {
+        align-items: flex-end;
     }
 
     &__img {
+        &-right {
+            position: relative;
+            right: -30px;
+        }
+        &-left {
+            position: relative;
+            left: -30px;
+        }
     }
 }
 .item-content-image {

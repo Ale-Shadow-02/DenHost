@@ -127,6 +127,7 @@
         }
     }
 }
+
 .item {
     flex: 0 1 30%;
     margin: 0px 0px 0px 10%;
@@ -149,6 +150,9 @@
     position: absolute;
     left: 0;
     bottom: 0;
+    @media (max-width: 576px) {
+        bottom: -100px;
+    }
 }
 @keyframes animate {
     0% {

@@ -33,6 +33,9 @@ main {
 	letter-spacing: 0.12em;
 	text-transform: uppercase;
 	color: #01f0ff;
+	@media (max-width: 576px) {
+		font-size: 2rem;
+	}
 }
 
 @import "button";
