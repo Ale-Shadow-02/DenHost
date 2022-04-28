@@ -10,6 +10,8 @@
         display: flex;
         flex-wrap: wrap;
         align-items: flex-end;
+        position: relative;
+        z-index: 1;
         @media (max-width: 992px) {
             flex-direction: column;
             align-items: center;
@@ -141,12 +143,12 @@
 }
 .wave {
     background: url(../img/wave.png) 0 0 / cover no-repeat;
-    height: 350px;
+    mix-blend-mode: lighten;
+    height: 380px;
     width: 100%;
     position: absolute;
     left: 0;
     bottom: 0;
-    z-index: 11;
 }
 @keyframes animate {
     0% {

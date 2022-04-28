@@ -386,6 +386,8 @@ main {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
 }
 @media (max-width: 992px) {
   .offer__body {
@@ -545,12 +547,12 @@ main {
 
 .wave {
   background: url(../img/wave.png) 0 0/cover no-repeat;
-  height: 350px;
+  mix-blend-mode: lighten;
+  height: 380px;
   width: 100%;
   position: absolute;
   left: 0;
   bottom: 0;
-  z-index: 11;
 }
 
 @keyframes animate {
@@ -567,6 +569,8 @@ main {
 .about__body {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 .about__body-item {
   flex: 0 1 50%;
@@ -574,9 +578,14 @@ main {
 .about__item-content {
   display: flex;
 }
+.about__item-img {
+  flex: 0 1 40%;
+}
+
 .section__title-about {
   max-width: 540px;
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
+  background: #fff;
 }
 .section__title-left {
   width: 100%;
