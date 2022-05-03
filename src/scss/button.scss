@@ -16,4 +16,7 @@
         border: 3px solid $btn-bg;
         transition: all ease 0.3s;
     }
+    @media (max-width: 576px) {
+        font-size: 0.9rem;
+    }
 }

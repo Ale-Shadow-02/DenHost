@@ -197,6 +197,11 @@ main {
   border: 3px solid #01f0ff;
   transition: all ease 0.3s;
 }
+@media (max-width: 576px) {
+  .btn {
+    font-size: 0.9rem;
+  }
+}
 
 .header {
   position: fixed;
@@ -575,6 +580,7 @@ main {
 }
 .about {
   background: #000b23;
+  padding: 0px 0px 70px 0px;
 }
 .about__body {
   display: flex;
@@ -607,6 +613,10 @@ main {
 }
 .about__item-image {
   max-width: 100%;
+}
+.about__btn {
+  text-align: center;
+  padding: 70px 0px 0px 0px;
 }
 
 .section__title-about {
@@ -660,4 +670,10 @@ main {
 .item-content__img-left {
   position: relative;
   left: -30px;
+}
+
+@media (max-width: 576px) {
+  .item-content__img {
+    display: none;
+  }
 }
