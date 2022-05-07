@@ -723,3 +723,17 @@ main {
   width: 100%;
   height: 110px;
 }
+
+.product {
+  padding: 120px 0px 70px 0;
+}
+.product__body {
+  display: flex;
+}
+.product__body-item {
+  flex: 0 1 50%;
+}
+.product__item-text {
+  color: #fff;
+  margin: 0px 0px 10px 0px;
+}
