@@ -680,6 +680,7 @@ main {
 .advantage {
   padding: 120px 0px 70px 0;
   background: url("../img/advantag_bg.jpg") 0 0/cover no-repeat;
+  position: relative;
 }
 .advantage__body {
   padding: 80px 0 0 0;
@@ -713,4 +714,12 @@ main {
   text-align: center;
   font-weight: 500;
   color: #fff;
+}
+.advantage__wave {
+  background: url("../img/adve_wave.png") 0 0/cover no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110px;
 }
