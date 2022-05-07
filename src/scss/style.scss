@@ -34,7 +34,7 @@ main {
 	text-transform: uppercase;
 	color: #01f0ff;
 	@media (max-width: 576px) {
-		font-size: 2rem;
+		font-size: 1.7rem;
 	}
 }
 
@@ -42,3 +42,4 @@ main {
 @import "header";
 @import "offer";
 @import "about";
+@import "advantage";

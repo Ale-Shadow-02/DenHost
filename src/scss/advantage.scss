@@ -1,0 +1,55 @@
+.advantage {
+    padding: 120px 0px 70px 0;
+    background: url("../img/advantag_bg.jpg") 0 0 / cover no-repeat;
+
+    &__body {
+        padding: 80px 0 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__body-item {
+        flex: 0 1 33%;
+        @media (max-width: 768px) {
+            flex: 0 1 50%;
+        }
+        @media (max-width: 576px) {
+            flex: 0 1 100%;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 0px 40px 0px;
+    }
+
+    &__item-descr {
+        width: 160px;
+        margin: 15px 0px 0px 0px;
+        text-align: center;
+        font-weight: 500;
+        color: #fff;
+    }
+}
+.container {
+}
+.section {
+    &__title {
+    }
+
+    &__title-about {
+    }
+
+    &__title-left {
+    }
+
+    &__title-white {
+    }
+
+    &__title-right {
+    }
+}
