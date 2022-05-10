@@ -122,6 +122,7 @@ ul li {
 
 img {
   vertical-align: top;
+  max-width: 100%;
 }
 
 h1,
@@ -174,7 +175,7 @@ main {
 }
 @media (max-width: 576px) {
   .section__title {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -679,7 +680,7 @@ main {
 }
 .advantage {
   padding: 120px 0px 70px 0;
-  background: url("../img/advantag_bg.jpg") 0 0/cover no-repeat;
+  background: url("../img/bg_advantage.png") 0 0/cover no-repeat;
   position: relative;
 }
 .advantage__body {
@@ -716,7 +717,7 @@ main {
   color: #fff;
 }
 .advantage__wave {
-  background: url("../img/adve_wave.png") 0 0/cover no-repeat;
+  background: url("../img/wave_1.png") 0 0/cover no-repeat;
   position: absolute;
   top: 0;
   left: 0;
@@ -725,15 +726,59 @@ main {
 }
 
 .product {
-  padding: 120px 0px 70px 0;
+  padding: 200px 0px 70px 0;
+  position: relative;
 }
 .product__body {
+  position: relative;
   display: flex;
+  padding: 100px 0px 0px 0px;
+}
+@media (max-width: 768px) {
+  .product__body {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.product__body-img {
+  width: 220px;
+  height: 100px;
+}
+@media (max-width: 992px) {
+  .product__body-img {
+    display: none;
+  }
+}
+.product__body-img1 {
+  position: absolute;
+  top: -140px;
+  left: -40px;
+}
+.product__body-img2 {
+  position: absolute;
+  top: 135px;
+  right: 0;
+}
+.product__body-img3 {
+  position: absolute;
+  right: -110px;
+  bottom: -120px;
 }
 .product__body-item {
   flex: 0 1 50%;
 }
+.product__item-descr {
+  padding: 40px 0px 0px 40px;
+}
 .product__item-text {
   color: #fff;
   margin: 0px 0px 10px 0px;
+}
+.product__wave {
+  background: url("../img/wave_2.png") 0 0/cover no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110px;
 }
