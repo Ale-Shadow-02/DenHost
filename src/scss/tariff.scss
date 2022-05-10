@@ -1,0 +1,98 @@
+.tariff {
+    position: relative;
+    padding: 200px 0px 150px 0px;
+    &__body {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px;
+        padding: 120px 0px 0px 0px;
+        @media (max-width: 792px) {
+            justify-content: center;
+        }
+        &-img3 {
+            position: absolute;
+            bottom: 0;
+            right: -260px;
+        }
+    }
+
+    &__body-item {
+        flex: 0 1 30%;
+    }
+
+    &__item {
+        background-color: #fff;
+        border-radius: 50px;
+        padding: 55px 15px;
+    }
+
+    &__item-title {
+        font-style: italic;
+        font-weight: 900;
+        font-size: 1.125rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #1f37ff;
+        text-align: center;
+        margin: 0px 0px 40px 0px;
+    }
+
+    &__item-text {
+        display: flex;
+        margin: 0px 0px 30px 0px;
+    }
+
+    &__item-name {
+        flex: 0 1 60%;
+        overflow: hidden;
+    }
+
+    &__item-name-text {
+        color: #161616;
+        @media (max-width: 576px) {
+            font-size: 0.8rem;
+        }
+    }
+
+    &__item-descr {
+        flex: 0 1 40%;
+        padding: 0px 0px 0px 5px;
+        @media (max-width: 576px) {
+            font-size: 0.8rem;
+        }
+    }
+
+    &__item-descr-text {
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #161616;
+    }
+
+    &__item-size {
+        display: block;
+        margin: 0px 0px 30px 0px;
+        text-align: center;
+        font-size: 2.25rem;
+        color: #1f37ff;
+    }
+
+    &__item-btn {
+        background: #01f0ff;
+        border-radius: 20px;
+        padding: 12px 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #141820;
+        transition: 0.3s;
+        &-wrp {
+            text-align: center;
+        }
+        &:hover {
+            background: darken(#01f0ff, 10%);
+            color: #fff;
+            transition: 0.3s;
+        }
+    }
+}
