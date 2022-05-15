@@ -27,33 +27,50 @@ export function mobilMenu() {
 	}
 
 	// Прокрутка при клике
-	const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
-	if (menuLinks.length > 0) {
-		menuLinks.forEach(menuLink => {
-			menuLink.addEventListener("click", onMenuLinkClick);
-		});
+	// const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
+	// if (menuLinks.length > 0) {
+	// 	menuLinks.forEach(menuLink => {
+	// 		menuLink.addEventListener("click", onMenuLinkClick);
+	// 	});
 
-		function onMenuLinkClick(e) {
-			const menuLink = e.target;
-			if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
-				const gotoBlock = document.querySelector(menuLink.dataset.goto);
-				const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollX - document.querySelector('header').offsetHeight;
+	// 	function onMenuLinkClick(e) {
+	// 		const menuLink = e.target;
+	// 		if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+	// 			const gotoBlock = document.querySelector(menuLink.dataset.goto);
+	// 			const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollX - document.querySelector('header').offsetHeight;
 
-				if (iconMenu.classList.contains('_active')) {
-					document.body.classList.remove('_lock');
-					iconMenu.classList.remove('_active');
-					menuBody.classList.remove('_active');
-				}
+	document.querySelectorAll('a[href^="#"').forEach(link => {
 
-				window.scrollTo({
-					top: gotoBlockValue,
-					behavior: "smooth"
-				});
-				e.preventDefault();
+		link.addEventListener('click', function (e) {
+			e.preventDefault();
+	
+			let href = this.getAttribute('href').substring(1);
+	
+			const scrollTarget = document.getElementById(href);
+	
+			const topOffset = document.querySelector('.header').offsetHeight;
+			// const topOffset = 0; // если не нужен отступ сверху 
+			const elementPosition = scrollTarget.getBoundingClientRect().top;
+			const offsetPosition = elementPosition - topOffset;
+
+			if (iconMenu.classList.contains('_active')) {
+				document.body.classList.remove('_lock');
+				iconMenu.classList.remove('_active');
+				menuBody.classList.remove('_active');
 			}
-		}
-	}
-}
+
+			// window.scrollTo({
+			// 	top: gotoBlockValue,
+			// 	behavior: "smooth"
+			// });
+			// e.preventDefault();
+			window.scrollBy({
+				top: offsetPosition,
+				behavior: 'smooth'
+			});
+		});	
+	});
+};
 // Анимация в офере по кругу
 export function circle() {
 	const text = document.querySelector(".item-circle__text p");
