@@ -942,6 +942,11 @@ main {
   line-height: 200px;
   color: #f4f4f4;
 }
+@media (max-width: 992px) {
+  .way__item-num {
+    font-size: 15rem;
+  }
+}
 .way__item-title {
   font-weight: 600;
   text-transform: uppercase;
