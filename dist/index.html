@@ -11,7 +11,7 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header lock-padding" id="header">
     <div class="header__container">
         <a href="/" class="header__logo">
             <img src="img/Logo_PrimeHost.svg" alt="LOGO">
@@ -164,7 +164,7 @@
 			</div>
 		</div>
 		<div class="about__btn">
-			<a href="#" class="btn">Задать вопрос</a>
+			<a href="#popup" class="btn popup-link">Задать вопрос</a>
 		</div>
 	</div>
 	<div class="product__wave"></div>
@@ -358,7 +358,7 @@
             </div>
             <div class="footer__body-item footer__item-center">
                 <div class="footer__item-title">Узнать подробности</div>
-                <a href="#" class="btn">оставить сообщение</a>
+                <a href="#popup" class="btn popup-link">оставить сообщение</a>
             </div>
             <div class="footer__body-item footer__item">
                 <div class="footer__item-col">
@@ -392,6 +392,42 @@
         </div>
     </div>
 </footer>
+		<div class="popup" id="popup">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="popup__close close-popup">&#215;</a>
+            <form data-name="Заказ звонка" class="form__popup" id="form-popup" name="form-popup" method="POST">
+                <p class="form__popup-title">Заказать обратный звонок</p>
+                <span class="form__popup-subtitle">*обозначены поля, обязательные для заполнения</span>
+                <div class="popup__item">
+                    <label for="popupName" class="popup__label">Имя *</label>
+                    <input type="text" class="popup__input" name="name" id="popupName" required>
+                </div>
+                <div class="popup__item">
+                    <label for="popupPhone" class="popup__label">Телефон *</label>
+                    <input type="text" class="popup__input" name="phone" id="popupPhone"
+                        placeholder="+7 (999)-999-99-99" required>
+                </div>
+                <div class="popup__item">
+                    <input type="checkbox" id="formAgreement" name="agreement" class="checkbox__input" required checked>
+                    <label for="formAgreement" class="checkbox__label"><span>Нажимая кнопку Заказать звонок вы
+                            соглашаетесь с <a href="https://alvetk.ru/privacy-policy/" class="checkbox__label-link"
+                                target="_blank">политикой обработки персональных
+                                данных</a></span></label>
+                </div>
+                <div class="popup__item">
+                    <button type="submit" class="btn popup__form-btn">Отправить</button>
+                </div>
+            </form>
+            <div class="w-form-done">
+                <div class="text__success">Спасибо! Ваша заявка успешно отправлена!</div>
+            </div>
+            <div class="w-form-fail">
+                <div class="text__error">Oops! Что то пошло не так, перезагрузите страницу и попробуйте еще раз!</div>
+            </div>
+        </div>
+    </div>
+</div>
 	</div>
 	<script src="js/app.min.js"></script>
 </body>
