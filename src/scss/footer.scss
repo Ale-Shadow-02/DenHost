@@ -52,4 +52,39 @@
         color: #ffffff;
         text-align: center;
     }
+    &__icon {
+        &-top {
+            position: fixed;
+            right: 5%;
+            bottom: 10%;
+            width: 60px;
+            height: 60px;
+            border: 2px solid #00eefd;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            &:hover {
+                & img {
+                    top: 0;
+                    transition: 0.3s;
+                }
+            }
+        }
+        &-topBg {
+            width: 50px;
+            height: 50px;
+            background: #3046ff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-arrow {
+            position: relative;
+            top: 40%;
+            transition: 0.3s;
+        }
+    }
 }

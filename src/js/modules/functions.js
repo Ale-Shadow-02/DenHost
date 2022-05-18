@@ -81,3 +81,18 @@ export function circle() {
 }
 
 
+// Scroll To top
+export function scrollTop() {
+	let topBtn = document.querySelector('.footer__icon-top');
+
+	topBtn.addEventListener("click", scrollToTop);
+
+	function scrollToTop() {
+		window.scrollTo({
+    		top: 0,
+    		behavior: "smooth"
+		});
+	}
+}
+
+

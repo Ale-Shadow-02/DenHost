@@ -1014,3 +1014,34 @@ main {
   color: #ffffff;
   text-align: center;
 }
+.footer__icon-top {
+  position: fixed;
+  right: 5%;
+  bottom: 10%;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #00eefd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.footer__icon-top:hover img {
+  top: 0;
+  transition: 0.3s;
+}
+.footer__icon-topBg {
+  width: 50px;
+  height: 50px;
+  background: #3046ff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__icon-arrow {
+  position: relative;
+  top: 40%;
+  transition: 0.3s;
+}
