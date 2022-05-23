@@ -3,7 +3,7 @@
     z-index: 111;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(4, 224, 255, 0.5);
     top: 0;
     left: 0;
     opacity: 0;
@@ -29,7 +29,6 @@
     transition: all 0.8s ease 0s;
 }
 .popup__content {
-    // background-color: #fcfcfc;
     background: linear-gradient(
         207.56deg,
         #141820 11.7%,
@@ -52,24 +51,34 @@
     right: 10px;
     top: 0;
     font-size: 40px;
-    color: #000;
+    color: #f9f9f9;
     text-decoration: none;
 }
 .form {
     &__popup {
         &-title {
-            font-weight: 500;
+            font-weight: 700;
+            font-style: italic;
             font-size: 24px;
-            line-height: 28px;
+            line-height: 22px;
             text-align: center;
+            text-transform: uppercase;
+            color: #f9f9f9;
             margin: 0px 0px 25px 0px;
+        }
+        &-titleSub {
+            font-weight: 500;
+            font-size: 1.125rem;
+            text-align: center;
+            color: #f3f3f3;
+            margin: 0px 0px 15px 0px;
         }
         &-subtitle {
             display: inline-block;
             font-weight: 400;
             font-size: 14px;
             line-height: 16px;
-            color: #00000080;
+            color: #f9f9f9;
             margin: 0px 0px 25px 0px;
         }
     }
@@ -87,7 +96,7 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 16px;
-        color: #00000080;
+        color: #f9f9f9;
         margin: 0px 0px 10px 0px;
     }
     &__input {
@@ -96,6 +105,12 @@
         border-radius: 4px;
         width: 100%;
         padding: 10px;
+    }
+    &__form {
+        &-btn {
+            display: block;
+            margin: 25px auto 0 auto;
+        }
     }
 }
 .checkbox {
@@ -108,10 +123,10 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 20px;
-        color: #75757580;
+        color: #f9f9f9;
         vertical-align: 7px;
         &-link {
-            color: #75757580;
+            color: #f9f9f9;
             text-decoration: underline;
             margin: 0px 0px 0px 35px;
             &:hover {
@@ -146,7 +161,7 @@
     .popup {
         &__form {
             &-btn {
-                font-size: 18px;
+                font-size: 16px;
             }
         }
     }
