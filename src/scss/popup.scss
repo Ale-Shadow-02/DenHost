@@ -105,6 +105,9 @@
         border-radius: 4px;
         width: 100%;
         padding: 10px;
+        &-textarea {
+            resize: vertical;
+        }
     }
     &__form {
         &-btn {
@@ -135,6 +138,7 @@
         }
     }
 }
+
 @media (max-width: 576px) {
     .popup__content {
         padding: 40px 10px;

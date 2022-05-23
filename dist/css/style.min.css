@@ -1149,6 +1149,9 @@ main {
   width: 100%;
   padding: 10px;
 }
+.popup__input-textarea {
+  resize: vertical;
+}
 .popup__form-btn {
   display: block;
   margin: 25px auto 0 auto;

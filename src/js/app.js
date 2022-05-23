@@ -6,6 +6,7 @@ flsFunctions.mobilMenu();
 flsFunctions.circle();
 flsFunctions.scrollTop();
 Popup.modalOpen();
+mail.sendMail();
 
 
 /*
