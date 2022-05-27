@@ -24,19 +24,17 @@
 	// $mail->Password = '6Zrx4JzbzNhasRSE46Q8';
 	
 	//От кого письмо
-	$mail->setFrom('dvoryadkin66@inbox.ru', 'Заявка с сайта ...');
+	$mail->setFrom('dvoryadkin66@inbox.ru', 'Заявка с сайта Prime Host');
 	//Кому отправить
 	$mail->addAddress('dvoryadkin66@mail.ru');
-	$mail->addAddress('dvoryadkiin@yandex.ru');
-	$mail->addAddress('avdok.ru@gmail.com');
 	//Тема письма
-	$mail->Subject = 'Новая заявка с сайта ..."';
+	$mail->Subject = 'Новая заявка с сайта Prime Host"';
 
 	//Рука
-	$hand = "Правая";
-	if($_POST['hand'] == "left"){
-		$hand = "Левая";
-	}
+	//$hand = "Правая";
+	//if($_POST['hand'] == "left"){
+	//	$hand = "Левая";
+	//}
 
 	//Тело письма
 	$body = '<h1>'.$_POST['subject'].'</h1>';
@@ -50,25 +48,22 @@
 	if(trim(!empty($_POST['phone']))){
 		$body.='<p><strong>Телефон:</strong> '.$_POST['phone'].'</p>';
 	}
-	if(trim(!empty($_POST['age']))){
-		$body.='<p><strong>Возраст:</strong> '.$_POST['age'].'</p>';
-	}
 	
 	if(trim(!empty($_POST['message']))){
 		$body.='<p><strong>Сообщение:</strong> '.$_POST['message'].'</p>';
 	}
 	
 	//Прикрепить файл
-	if (!empty($_FILES['image']['tmp_name'])) {
+	//if (!empty($_FILES['image']['tmp_name'])) {
 		//путь загрузки файла
-		$filePath = __DIR__ . "/files/" . $_FILES['image']['name']; 
+		//$filePath = __DIR__ . "/files/" . $_FILES['image']['name']; 
 		//грузим файл
-		if (copy($_FILES['image']['tmp_name'], $filePath)){
-			$fileAttach = $filePath;
-			$body.='<p><strong>Фото в приложении</strong>';
-			$mail->addAttachment($fileAttach);
-		}
-	}
+		//if (copy($_FILES['image']['tmp_name'], $filePath)){
+			//$fileAttach = $filePath;
+			//$body.='<p><strong>Фото в приложении</strong>';
+			//$mail->addAttachment($fileAttach);
+		//}
+	//}
 
 	$mail->Body = $body;
 

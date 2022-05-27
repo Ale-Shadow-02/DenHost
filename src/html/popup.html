@@ -2,22 +2,22 @@
     <div class="popup__body">
         <div class="popup__content">
             <a href="#" class="popup__close close-popup">&#215;</a>
-            <form action="#" id="form class=" form__popup" ">
+            <form action="#" id="form" class="form__popup">
                 <p class=" form__popup-title">Если у Вас есть вопросы</p>
                 <p class="form__popup-titleSub">Оставьте свои контакты, и вскоре наш менеджер свяжется с Вами</p>
                 <span class="form__popup-subtitle">*обозначены поля, обязательные для заполнения</span>
+                <input type="hidden" name="subject" value="Сообщение с сайта PRIME HOST">
                 <div class="popup__item">
                     <label for="popupName" class="popup__label">Имя *</label>
-                    <input id="popupName" type="text" name="name" class="popup__input _reg">
+                    <input id="popupName" type="text" name="name" class="popup__input" required>
                 </div>
                 <div class="popup__item">
                     <label for="popupEmail" class="popup__label">Email *</label>
-                    <input id="popupEmail" type="text" name="email" class="popup__input _reg">
+                    <input id="popupEmail" type="email" name="email" class="popup__input" required>
                 </div>
                 <div class="popup__item">
                     <label for="popupPhone" class="popup__label">Телефон</label>
-                    <input id="popupPhone" type="text" name="phone" class="popup__input"
-                        placeholder="+7 (999)-999-99-99">
+                    <input id="popupPhone" type="tel" name="phone" class="popup__input user_phone">
                 </div>
                 <div class="form__item">
                     <label for="popupMessage" class="popup__label">Сообщение:</label>
@@ -27,7 +27,7 @@
                     <button type="submit" class="btn popup__form-btn">узнать подробности</button>
                 </div>
                 <div class="popup__item">
-                    <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _reg">
+                    <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input" required>
                     <label for="formAgreement" class="checkbox__label"><span>Нажимая кнопку, Вы даете<br><a
                                 href="politic.html" class="checkbox__label-link" target="_blank">Согласие на
                                 обработку персональных данных</a></span></label>
