@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //if (file.size > 2 * 1024 * 1024) {
     //alert('Файл должен быть менее 2 МБ.');
     //return;
-}
+//}
 
 //var reader = new FileReader();
 //reader.onload = function (e) {
